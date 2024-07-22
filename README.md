@@ -92,10 +92,9 @@ public class LoggingController {
 
 When you make a request to the controller, the log output might look like this:
 
-```
 
-2024-07-22 10:20:15 - com.example.demo.controller.LoggingController - INFO - An INFO Message
+
+```2024-07-22 10:20:15 - com.example.demo.controller.LoggingController - INFO - An INFO Message
 2024-07-22 10:20:15 - com.example.demo.controller.LoggingController - WARN - A WARN Message
 2024-07-22 10:20:20 - com.example.demo.controller.LoggingController - ERROR - An ERROR Message
 
-```
