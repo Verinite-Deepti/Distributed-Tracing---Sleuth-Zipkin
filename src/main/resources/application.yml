@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: BankingApplication_ZipkinSleuth_singleservice
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/bankapp_zipkinsleuth
+    username: root
+    password: Verinite@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 9000
+  
+  spring:
+  zipkin:
+    base-url: http://localhost:9411/
+
+
+  logging:
+      level:
+      org.springframework.cloud.sleuth: DEBUG
+      zipkin: DEBUG
