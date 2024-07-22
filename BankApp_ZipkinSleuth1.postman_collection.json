@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "b44a00f4-1e71-4ebf-a2a7-47723cb04fe7",
+		"name": "BankApp_ZipkinSleuth1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "36708209"
+	},
+	"item": [
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "Add Customer Details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n   \"name\":\"Fiza\",\r\n   \"balance\":\"14000.00\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:9000/api/banking/account/details"
+					},
+					"response": []
+				},
+				{
+					"name": "transfer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/banking/transfer?fromAccountId=15&toAccountId=13&amount=150",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"banking",
+								"transfer"
+							],
+							"query": [
+								{
+									"key": "fromAccountId",
+									"value": "15"
+								},
+								{
+									"key": "toAccountId",
+									"value": "13"
+								},
+								{
+									"key": "amount",
+									"value": "150"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get",
+			"item": [
+				{
+					"name": "Get Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:9000/api/banking/account/15"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
