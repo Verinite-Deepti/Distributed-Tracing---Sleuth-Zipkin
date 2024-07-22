@@ -40,7 +40,8 @@ Spring Cloud Sleuth provides distributed tracing capabilities for Spring Boot ap
 
 2. **Run Zipkin Server**
 
-You can run Zipkin locally using Docker:
+Run Zipkin locally using Docker:
+
 ```
 
 docker run -d -p 9411:9411 openzipkin/zipkin
@@ -49,7 +50,7 @@ docker run -d -p 9411:9411 openzipkin/zipkin
 
 3. **View Traces**
 
-Navigate to http://localhost:9411 to view the traces collected by Zipkin.
+Navigate to ```  http://localhost:9411  ```to view the traces collected by Zipkin.
 
 ## Logging
 Spring Cloud Sleuth automatically adds trace and span IDs to your logs, which helps in correlating logs with distributed traces. Use a standard logging framework like SLF4J to log messages.
