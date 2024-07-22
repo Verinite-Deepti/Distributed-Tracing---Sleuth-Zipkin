@@ -21,10 +21,6 @@ Zipkin is a distributed tracing system that helps collect and visualize trace da
 
 Spring Cloud Sleuth provides distributed tracing capabilities for Spring Boot applications. It integrates seamlessly with Zipkin and automatically adds trace and span IDs to logs, making it easier to correlate logs with traces.
 
-## Banking Application Example
-
-In this example, we have a simple banking application that performs operations such as retrieving and updating user accounts. We use Spring Boot with Spring Cloud Sleuth for tracing and Zipkin for visualization.
-
 ### Configuration
 
 1. **Add Dependencies**
@@ -45,8 +41,11 @@ In this example, we have a simple banking application that performs operations s
 2. **Run Zipkin Server**
 
 You can run Zipkin locally using Docker:
+```
 
 docker run -d -p 9411:9411 openzipkin/zipkin
+
+```
 
 3. **View Traces**
 
