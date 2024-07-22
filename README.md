@@ -1,5 +1,5 @@
 
-# Banking Application with Distributed Tracing---Slueth-Zipkin
+# Banking Application with Distributed Tracing---Sleuth-Zipkin
 
 ## Overview
 
